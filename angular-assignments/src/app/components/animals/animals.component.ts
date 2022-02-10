@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Animal } from 'src/app/models/Animal';
 
 @Component({
   selector: 'app-animals',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./animals.component.scss']
 })
 export class AnimalsComponent implements OnInit {
+
+  @Input() animal: Animal = new Animal('', '', 0, true);
 
   constructor() { }
 

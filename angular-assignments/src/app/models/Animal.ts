@@ -2,12 +2,15 @@ export class Animal {
     type: string;
     name: string;
     age: number;
+    fed: boolean;
 
 
-    constructor(newAnimal: string, newAge: number) {
-        this.type = newAnimal;
-        this.name = newAnimal;
-        this.age = newAge;
+    constructor(type: string, name: string, age: number, fed: boolean) {
+        this.type = type;
+        this.name = name;
+        this.age = 0;
+        this.fed = false;
+
     }
 
 }
