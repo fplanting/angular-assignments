@@ -1,1 +1,5 @@
-<app-animals *ngFor="let a of animals" [animal]="a"></app-animals>
+<div *ngFor="let animal of animalList">
+    {{ animal.name + animal.age + animal.type }}
+
+    <span *ngif="animal.isfed">{{ animal.isfed }}</span>
+</div>

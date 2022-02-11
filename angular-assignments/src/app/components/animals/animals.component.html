@@ -1,8 +1,5 @@
-<div class="container">
+<div>
+    <p>{{animal.name +', ' + animal.type + ', ' + animal.age + ' år' }}</p>
 
-    <ul>Animal:</ul>
-    <li>Name: {{ animal.name }}</li>
-    <li>Type: {{ animal.type }}</li>
-    <li>{{ animal.age }} years old</li>
-    <li>Fed {{ animal.fed }}</li>
+    <button (click)="feedAnimal()">Ge djuret mat</button>
 </div>

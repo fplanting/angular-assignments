@@ -9,11 +9,11 @@ import { Animal } from 'src/app/models/Animal';
 export class PrintAnimalComponent implements OnInit {
 
 
-  animals: Animal[] = [
-    {type: 'katt', name: 'Tiger', age: 5, fed: true}, 
-    {type: 'hund', name: 'Oliwer', age: 3, fed: false},
-    {type: 'Kanin', name: 'Molly', age: 10, fed: true}, 
-    {type: 'Marsvin', name: 'Kita', age: 2, fed: false}];
+  animalList: Animal[] = [
+    {type: 'katt', name: 'Tiger', age: 5, isfed: true}, 
+    {type: 'hund', name: 'Oliwer', age: 3, isfed: false},
+    {type: 'Kanin', name: 'Molly', age: 10, isfed: true}, 
+    {type: 'Marsvin', name: 'Kita', age: 2, isfed: false}];
 
 
   constructor() { }
