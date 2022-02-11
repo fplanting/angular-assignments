@@ -1,5 +1,5 @@
 <div>
     <p>{{animal.name +', ' + animal.type + ', ' + animal.age + ' år' }}</p>
 
-    <button (click)="feedAnimal()">Ge djuret mat</button>
+    <button (click)="feedAnimal()" [appHighlight]="animationSpeed">Ge djuret mat</button>
 </div>

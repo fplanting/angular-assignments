@@ -1,3 +1,5 @@
 <h1>Ge djuren mat</h1>
+<img [src]="imageAnimals" [class]="animalPic" />
+
 <app-animals *ngFor="let animal of zoo" [animal]="animal" (fed)="makeAnimalFed(animal)"></app-animals>
 <h2>Totalt antal djur som fått mat: {{animalsFed}}</h2>

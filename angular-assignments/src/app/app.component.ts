@@ -21,4 +21,8 @@ export class AppComponent {
     animal.isfed = true;
     this.animalsFed++;
   }
+
+  animalPic: string = 'imageAnimals';
+
+  imageAnimals: string = 'https://freedesignfile.com/upload/2012/07/Animals-with-billboard-vector-1.jpg';
 }

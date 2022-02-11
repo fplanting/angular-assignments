@@ -16,6 +16,8 @@ export class AnimalsComponent implements OnInit {
     this.fed.emit(this.animal);
   }
 
+  animationSpeed: number = 2;
+  
   constructor() { }
 
   ngOnInit(): void {
