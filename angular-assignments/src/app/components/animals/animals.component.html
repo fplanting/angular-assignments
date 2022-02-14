@@ -1,5 +1,6 @@
 <div>
     <p>{{animal.name +', ' + animal.type + ', ' + animal.age + ' år' }}</p>
+    <h3>Födelsedag: {{ animal.birthday | date: 'shortDate' }}</h3>
 
     <button (click)="feedAnimal()" [appHighlight]="animationSpeed">Ge djuret mat</button>
 </div>

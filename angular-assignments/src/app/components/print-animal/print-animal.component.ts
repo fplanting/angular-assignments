@@ -10,10 +10,10 @@ export class PrintAnimalComponent implements OnInit {
 
 
   animalList: Animal[] = [
-    {type: 'katt', name: 'Tiger', age: 5, isfed: true}, 
-    {type: 'hund', name: 'Oliwer', age: 3, isfed: false},
-    {type: 'Kanin', name: 'Molly', age: 10, isfed: true}, 
-    {type: 'Marsvin', name: 'Kita', age: 2, isfed: false}];
+    {type: 'katt', name: 'Tiger', age: 5, birthday: new Date(2016, 8, 12), isfed: true}, 
+    {type: 'hund', name: 'Oliwer', age: 3, birthday: new Date(2018, 3, 21), isfed: false},
+    {type: 'Kanin', name: 'Molly', age: 10, birthday: new Date(2011, 9, 3), isfed: true}, 
+    {type: 'Marsvin', name: 'Kita', age: 2, birthday: new Date(2019, 12, 3), isfed: false}];
 
 
   constructor() { }
